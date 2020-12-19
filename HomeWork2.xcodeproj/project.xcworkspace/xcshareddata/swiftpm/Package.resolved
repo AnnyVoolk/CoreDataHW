@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OtusCore",
+        "repositoryURL": "https://github.com/AnnyVoolk/otusCore.git",
+        "state": {
+          "branch": null,
+          "revision": "e19febdfda24cf642f9d23b504a5e9f5172f40d8",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "OtusNetWork",
+        "repositoryURL": "https://github.com/AnnyVoolk/OtusNetwork.git",
+        "state": {
+          "branch": null,
+          "revision": "82e7d5aa93be1191ff3bfd221dabad4d4149cbd8",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "OtusUI",
+        "repositoryURL": "https://github.com/AnnyVoolk/OtusUI.git",
+        "state": {
+          "branch": null,
+          "revision": "1074a5bad3f90b95a309c9a43c205e46c8fe96c8",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

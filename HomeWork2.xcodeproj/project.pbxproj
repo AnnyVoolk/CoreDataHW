@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0408B5B42549BCEA008AEFDD /* OtusCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0408B5B32549BCEA008AEFDD /* OtusCore */; };
+		0408B5BE2549C33C008AEFDD /* OtusUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0408B5BD2549C33C008AEFDD /* OtusUI */; };
+		046C964A25134A0C008D580B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C964925134A0C008D580B /* AppDelegate.swift */; };
+		046C964C25134A0C008D580B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C964B25134A0C008D580B /* SceneDelegate.swift */; };
+		046C964E25134A0C008D580B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C964D25134A0C008D580B /* ContentView.swift */; };
+		046C965025134A14008D580B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046C964F25134A14008D580B /* Assets.xcassets */; };
+		046C965325134A14008D580B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046C965225134A14008D580B /* Preview Assets.xcassets */; };
+		046C965625134A14008D580B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046C965425134A14008D580B /* LaunchScreen.storyboard */; };
+		04B88332258E307B0002F5FD /* JobsServiceCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8832B258E307B0002F5FD /* JobsServiceCD.swift */; };
+		04B88333258E307B0002F5FD /* Jobs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04B8832C258E307B0002F5FD /* Jobs.xcdatamodeld */; };
+		04B88334258E307B0002F5FD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8832E258E307B0002F5FD /* NetworkService.swift */; };
+		04B88335258E307B0002F5FD /* JobsCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8832F258E307B0002F5FD /* JobsCD.swift */; };
+		04B88336258E307B0002F5FD /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88330258E307B0002F5FD /* DatabaseService.swift */; };
+		04B88337258E307B0002F5FD /* LoadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88331258E307B0002F5FD /* LoadService.swift */; };
+		04B8833A258E30A30002F5FD /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88339258E30A30002F5FD /* AppConfig.swift */; };
+		04B88343258E30BE0002F5FD /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88341258E30BE0002F5FD /* ViewControllers.swift */; };
+		04B88344258E30BE0002F5FD /* UserDefaultsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88342258E30BE0002F5FD /* UserDefaultsName.swift */; };
+		04B88346258E30D10002F5FD /* RandomAccessCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88345258E30D10002F5FD /* RandomAccessCollection.swift */; };
+		04B8834B258E30E60002F5FD /* ServiceLocator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04B88348258E30E60002F5FD /* ServiceLocator.xcdatamodeld */; };
+		04B8834C258E30E60002F5FD /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8834A258E30E60002F5FD /* ServiceLocator.swift */; };
+		04B88350258E30FD0002F5FD /* CurrentJobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8834E258E30FD0002F5FD /* CurrentJobViewModel.swift */; };
+		04B88351258E30FD0002F5FD /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8834F258E30FD0002F5FD /* JobsViewModel.swift */; };
+		04B8835A258E31180002F5FD /* JobsScreenList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88354258E31180002F5FD /* JobsScreenList.swift */; };
+		04B8835B258E31180002F5FD /* JobsScreenJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88355258E31180002F5FD /* JobsScreenJobCell.swift */; };
+		04B8835C258E31180002F5FD /* JobsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88356258E31180002F5FD /* JobsScreen.swift */; };
+		04B8835D258E31180002F5FD /* JobDescriptionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88358258E31180002F5FD /* JobDescriptionScreen.swift */; };
+		04B8835E258E31180002F5FD /* CurrentJobScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B88359258E31180002F5FD /* CurrentJobScreen.swift */; };
+		04BBC4542523591B004D14B2 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBC4532523591B004D14B2 /* UIApplication.swift */; };
+		04BBC45625235937004D14B2 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBC45525235937004D14B2 /* UIDevice.swift */; };
+		04BBC46325236940004D14B2 /* FakeNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBC46225236940004D14B2 /* FakeNavBar.swift */; };
+		04F825AE2548A04100D4A4EB /* OtusNetWork in Frameworks */ = {isa = PBXBuildFile; productRef = 04F825AD2548A04100D4A4EB /* OtusNetWork */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		046C964625134A0C008D580B /* HomeWork2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		046C964925134A0C008D580B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		046C964B25134A0C008D580B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		046C964D25134A0C008D580B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		046C964F25134A14008D580B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		046C965225134A14008D580B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		046C965525134A14008D580B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		046C965725134A14008D580B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B8832B258E307B0002F5FD /* JobsServiceCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsServiceCD.swift; sourceTree = "<group>"; };
+		04B8832D258E307B0002F5FD /* Jobs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jobs.xcdatamodel; sourceTree = "<group>"; };
+		04B8832E258E307B0002F5FD /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		04B8832F258E307B0002F5FD /* JobsCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsCD.swift; sourceTree = "<group>"; };
+		04B88330258E307B0002F5FD /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		04B88331258E307B0002F5FD /* LoadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadService.swift; sourceTree = "<group>"; };
+		04B88339258E30A30002F5FD /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		04B88341258E30BE0002F5FD /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		04B88342258E30BE0002F5FD /* UserDefaultsName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsName.swift; sourceTree = "<group>"; };
+		04B88345258E30D10002F5FD /* RandomAccessCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomAccessCollection.swift; sourceTree = "<group>"; };
+		04B88349258E30E60002F5FD /* ServiceLocator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ServiceLocator.xcdatamodel; sourceTree = "<group>"; };
+		04B8834A258E30E60002F5FD /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		04B8834E258E30FD0002F5FD /* CurrentJobViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentJobViewModel.swift; sourceTree = "<group>"; };
+		04B8834F258E30FD0002F5FD /* JobsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewModel.swift; sourceTree = "<group>"; };
+		04B88354258E31180002F5FD /* JobsScreenList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsScreenList.swift; sourceTree = "<group>"; };
+		04B88355258E31180002F5FD /* JobsScreenJobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsScreenJobCell.swift; sourceTree = "<group>"; };
+		04B88356258E31180002F5FD /* JobsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsScreen.swift; sourceTree = "<group>"; };
+		04B88358258E31180002F5FD /* JobDescriptionScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobDescriptionScreen.swift; sourceTree = "<group>"; };
+		04B88359258E31180002F5FD /* CurrentJobScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentJobScreen.swift; sourceTree = "<group>"; };
+		04BBC4532523591B004D14B2 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		04BBC45525235937004D14B2 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		04BBC46225236940004D14B2 /* FakeNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNavBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046C964325134A0C008D580B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0408B5B42549BCEA008AEFDD /* OtusCore in Frameworks */,
+				0408B5BE2549C33C008AEFDD /* OtusUI in Frameworks */,
+				04F825AE2548A04100D4A4EB /* OtusNetWork in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0408B5822549B6F4008AEFDD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04B88347258E30E60002F5FD /* ServiceLocator */,
+				04B88340258E30BE0002F5FD /* DataName */,
+				04B88338258E30A30002F5FD /* AppConfig */,
+				0408B5B52549C066008AEFDD /* Extenstion */,
+				0408B5832549B6F4008AEFDD /* ViewModels */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0408B5832549B6F4008AEFDD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04B8834D258E30FD0002F5FD /* Jobs */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0408B5B52549C066008AEFDD /* Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				04B88345258E30D10002F5FD /* RandomAccessCollection.swift */,
+				04BBC45525235937004D14B2 /* UIDevice.swift */,
+				04BBC4532523591B004D14B2 /* UIApplication.swift */,
+			);
+			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		046C963D25134A0C008D580B = {
+			isa = PBXGroup;
+			children = (
+				046C964825134A0C008D580B /* HomeWork2 */,
+				046C964725134A0C008D580B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		046C964725134A0C008D580B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				046C964625134A0C008D580B /* HomeWork2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		046C964825134A0C008D580B /* HomeWork2 */ = {
+			isa = PBXGroup;
+			children = (
+				04B8832A258E307B0002F5FD /* CodeData */,
+				0408B5822549B6F4008AEFDD /* Core */,
+				04F8259725488C1000D4A4EB /* UI */,
+				046C964925134A0C008D580B /* AppDelegate.swift */,
+				046C964B25134A0C008D580B /* SceneDelegate.swift */,
+				046C964D25134A0C008D580B /* ContentView.swift */,
+				046C964F25134A14008D580B /* Assets.xcassets */,
+				046C965425134A14008D580B /* LaunchScreen.storyboard */,
+				046C965725134A14008D580B /* Info.plist */,
+				046C965125134A14008D580B /* Preview Content */,
+			);
+			path = HomeWork2;
+			sourceTree = "<group>";
+		};
+		046C965125134A14008D580B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				046C965225134A14008D580B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04B8832A258E307B0002F5FD /* CodeData */ = {
+			isa = PBXGroup;
+			children = (
+				04B8832B258E307B0002F5FD /* JobsServiceCD.swift */,
+				04B8832C258E307B0002F5FD /* Jobs.xcdatamodeld */,
+				04B8832E258E307B0002F5FD /* NetworkService.swift */,
+				04B8832F258E307B0002F5FD /* JobsCD.swift */,
+				04B88330258E307B0002F5FD /* DatabaseService.swift */,
+				04B88331258E307B0002F5FD /* LoadService.swift */,
+			);
+			path = CodeData;
+			sourceTree = "<group>";
+		};
+		04B88338258E30A30002F5FD /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				04B88339258E30A30002F5FD /* AppConfig.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		04B88340258E30BE0002F5FD /* DataName */ = {
+			isa = PBXGroup;
+			children = (
+				04B88341258E30BE0002F5FD /* ViewControllers.swift */,
+				04B88342258E30BE0002F5FD /* UserDefaultsName.swift */,
+			);
+			path = DataName;
+			sourceTree = "<group>";
+		};
+		04B88347258E30E60002F5FD /* ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				04B88348258E30E60002F5FD /* ServiceLocator.xcdatamodeld */,
+				04B8834A258E30E60002F5FD /* ServiceLocator.swift */,
+			);
+			path = ServiceLocator;
+			sourceTree = "<group>";
+		};
+		04B8834D258E30FD0002F5FD /* Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				04B8834E258E30FD0002F5FD /* CurrentJobViewModel.swift */,
+				04B8834F258E30FD0002F5FD /* JobsViewModel.swift */,
+			);
+			path = Jobs;
+			sourceTree = "<group>";
+		};
+		04B88352258E31180002F5FD /* Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				04B88353258E31180002F5FD /* JobsScreens */,
+				04B88356258E31180002F5FD /* JobsScreen.swift */,
+				04B88357258E31180002F5FD /* Job */,
+			);
+			path = Jobs;
+			sourceTree = "<group>";
+		};
+		04B88353258E31180002F5FD /* JobsScreens */ = {
+			isa = PBXGroup;
+			children = (
+				04B88354258E31180002F5FD /* JobsScreenList.swift */,
+				04B88355258E31180002F5FD /* JobsScreenJobCell.swift */,
+			);
+			path = JobsScreens;
+			sourceTree = "<group>";
+		};
+		04B88357258E31180002F5FD /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				04B88358258E31180002F5FD /* JobDescriptionScreen.swift */,
+				04B88359258E31180002F5FD /* CurrentJobScreen.swift */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		04F8259725488C1000D4A4EB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				04B88352258E31180002F5FD /* Jobs */,
+				04BBC46225236940004D14B2 /* FakeNavBar.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046C964525134A0C008D580B /* HomeWork2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046C965A25134A14008D580B /* Build configuration list for PBXNativeTarget "HomeWork2" */;
+			buildPhases = (
+				046C964225134A0C008D580B /* Sources */,
+				046C964325134A0C008D580B /* Frameworks */,
+				046C964425134A0C008D580B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeWork2;
+			packageProductDependencies = (
+				04F825AD2548A04100D4A4EB /* OtusNetWork */,
+				0408B5B32549BCEA008AEFDD /* OtusCore */,
+				0408B5BD2549C33C008AEFDD /* OtusUI */,
+			);
+			productName = HomeWork2;
+			productReference = 046C964625134A0C008D580B /* HomeWork2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		046C963E25134A0C008D580B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					046C964525134A0C008D580B = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 046C964125134A0C008D580B /* Build configuration list for PBXProject "HomeWork2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 046C963D25134A0C008D580B;
+			packageReferences = (
+				04F825AC2548A04100D4A4EB /* XCRemoteSwiftPackageReference "OtusNetwork" */,
+				0408B5B22549BCEA008AEFDD /* XCRemoteSwiftPackageReference "otusCore" */,
+				0408B5BC2549C33C008AEFDD /* XCRemoteSwiftPackageReference "OtusUI" */,
+			);
+			productRefGroup = 046C964725134A0C008D580B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				046C964525134A0C008D580B /* HomeWork2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046C964425134A0C008D580B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046C965625134A14008D580B /* LaunchScreen.storyboard in Resources */,
+				046C965325134A14008D580B /* Preview Assets.xcassets in Resources */,
+				046C965025134A14008D580B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046C964225134A0C008D580B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B8833A258E30A30002F5FD /* AppConfig.swift in Sources */,
+				04B88343258E30BE0002F5FD /* ViewControllers.swift in Sources */,
+				04B8834B258E30E60002F5FD /* ServiceLocator.xcdatamodeld in Sources */,
+				04B88334258E307B0002F5FD /* NetworkService.swift in Sources */,
+				046C964A25134A0C008D580B /* AppDelegate.swift in Sources */,
+				04B88336258E307B0002F5FD /* DatabaseService.swift in Sources */,
+				04B88337258E307B0002F5FD /* LoadService.swift in Sources */,
+				04B88346258E30D10002F5FD /* RandomAccessCollection.swift in Sources */,
+				04BBC46325236940004D14B2 /* FakeNavBar.swift in Sources */,
+				04B8835C258E31180002F5FD /* JobsScreen.swift in Sources */,
+				04B8835B258E31180002F5FD /* JobsScreenJobCell.swift in Sources */,
+				046C964C25134A0C008D580B /* SceneDelegate.swift in Sources */,
+				04B88333258E307B0002F5FD /* Jobs.xcdatamodeld in Sources */,
+				04B8835E258E31180002F5FD /* CurrentJobScreen.swift in Sources */,
+				04B88332258E307B0002F5FD /* JobsServiceCD.swift in Sources */,
+				04B8834C258E30E60002F5FD /* ServiceLocator.swift in Sources */,
+				04B88350258E30FD0002F5FD /* CurrentJobViewModel.swift in Sources */,
+				04BBC4542523591B004D14B2 /* UIApplication.swift in Sources */,
+				04BBC45625235937004D14B2 /* UIDevice.swift in Sources */,
+				04B88351258E30FD0002F5FD /* JobsViewModel.swift in Sources */,
+				04B8835A258E31180002F5FD /* JobsScreenList.swift in Sources */,
+				04B8835D258E31180002F5FD /* JobDescriptionScreen.swift in Sources */,
+				04B88344258E30BE0002F5FD /* UserDefaultsName.swift in Sources */,
+				04B88335258E307B0002F5FD /* JobsCD.swift in Sources */,
+				046C964E25134A0C008D580B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		046C965425134A14008D580B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046C965525134A14008D580B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		046C965825134A14008D580B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		046C965925134A14008D580B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		046C965B25134A14008D580B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeWork2/Preview Content\"";
+				DEVELOPMENT_TEAM = DN258GQLBB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HomeWork2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AnnaVolkova.HomeWork2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		046C965C25134A14008D580B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeWork2/Preview Content\"";
+				DEVELOPMENT_TEAM = DN258GQLBB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HomeWork2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AnnaVolkova.HomeWork2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		046C964125134A0C008D580B /* Build configuration list for PBXProject "HomeWork2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046C965825134A14008D580B /* Debug */,
+				046C965925134A14008D580B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046C965A25134A14008D580B /* Build configuration list for PBXNativeTarget "HomeWork2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046C965B25134A14008D580B /* Debug */,
+				046C965C25134A14008D580B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0408B5B22549BCEA008AEFDD /* XCRemoteSwiftPackageReference "otusCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AnnyVoolk/otusCore.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		0408B5BC2549C33C008AEFDD /* XCRemoteSwiftPackageReference "OtusUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AnnyVoolk/OtusUI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		04F825AC2548A04100D4A4EB /* XCRemoteSwiftPackageReference "OtusNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AnnyVoolk/OtusNetwork.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0408B5B32549BCEA008AEFDD /* OtusCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0408B5B22549BCEA008AEFDD /* XCRemoteSwiftPackageReference "otusCore" */;
+			productName = OtusCore;
+		};
+		0408B5BD2549C33C008AEFDD /* OtusUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0408B5BC2549C33C008AEFDD /* XCRemoteSwiftPackageReference "OtusUI" */;
+			productName = OtusUI;
+		};
+		04F825AD2548A04100D4A4EB /* OtusNetWork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F825AC2548A04100D4A4EB /* XCRemoteSwiftPackageReference "OtusNetwork" */;
+			productName = OtusNetWork;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		04B8832C258E307B0002F5FD /* Jobs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04B8832D258E307B0002F5FD /* Jobs.xcdatamodel */,
+			);
+			currentVersion = 04B8832D258E307B0002F5FD /* Jobs.xcdatamodel */;
+			path = Jobs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		04B88348258E30E60002F5FD /* ServiceLocator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04B88349258E30E60002F5FD /* ServiceLocator.xcdatamodel */,
+			);
+			currentVersion = 04B88349258E30E60002F5FD /* ServiceLocator.xcdatamodel */;
+			path = ServiceLocator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 046C963E25134A0C008D580B /* Project object */;
+}
