@@ -99,11 +99,3 @@ extension Jobs {
         desc?.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
     }
 }
-
-enum DecoderConfigurationError: Error {
-  case missingManagedObjectContext
-}
-
-enum NSEntityDescriptionError: Error {
-  case cantCreateDescriptionForEntityName
-}

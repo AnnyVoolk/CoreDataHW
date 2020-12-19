@@ -1,5 +1,5 @@
 //
-//  JobsServiceCD.swift
+//  JobsService.swift
 //  HomeWork2
 //
 //  Created by Anna Volkova on 13.12.2020.
@@ -9,16 +9,15 @@
 import Foundation
 import CoreData
 
-protocol IJobsServiceCD {
+protocol IJobsService {
+    
     func readJobs() -> [Jobs]
-    
     func readJob(with identifier: String) -> Jobs?
-    
     func writeJobs(from data: Data, _ completion: @escaping () -> Void)
 }
 
 
-class JobsServiceCD: IJobsServiceCD{
+class JobsService: IJobsService{
     
     private unowned var readCoreData: NSManagedObjectContext
     

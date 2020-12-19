@@ -18,11 +18,11 @@ class LoadService {
     private let networkService: NetworkService
     
     private let databaseService: DatabaseService
-    private let jobService: IJobsServiceCD
+    private let jobService: IJobsService
     
     init(networkService: NetworkService,
          databaseService: DatabaseService,
-         jobService: IJobsServiceCD
+         jobService: IJobsService
     ) {
         self.networkService = networkService
         self.databaseService = databaseService

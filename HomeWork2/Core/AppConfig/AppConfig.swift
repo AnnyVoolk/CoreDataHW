@@ -19,14 +19,14 @@ public class AppConfig {
     private func setup() {
         let databaseService = DatabaseService()
         let networkService = NetworkService()
-        let jobService = JobsServiceCD(databaseService: databaseService)
+        let jobService = JobsService(databaseService: databaseService)
         
         let loadService = LoadService(
             networkService: networkService,
             databaseService: databaseService,
             jobService: jobService
         )
-        ServiceLocator.shared.addService(service: jobService as IJobsServiceCD)
+        ServiceLocator.shared.addService(service: jobService as IJobsService)
         ServiceLocator.shared.addService(service: loadService as LoadService)
     }
 }

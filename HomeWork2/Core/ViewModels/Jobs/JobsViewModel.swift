@@ -16,14 +16,14 @@ class JobsViewModel: ObservableObject {
     
     @Published private(set) var page = 0
     
-    @Published private var jobsService: IJobsServiceCD?
+    @Published private var jobsService: IJobsService?
     
     @Published private var loadService: ILoadService?
     
     private let userDefaults = UserDefaults.standard
     
     init() {
-        self.jobsService = ServiceLocator.shared.getService(type: IJobsServiceCD.self)
+        self.jobsService = ServiceLocator.shared.getService(type: IJobsService.self)
         self.loadService = ServiceLocator.shared.getService(type: LoadService.self)
     }
     

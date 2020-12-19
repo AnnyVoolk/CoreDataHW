@@ -10,12 +10,12 @@ import Foundation
 
 class CurrentJobViewModel: ObservableObject {
     
-    @Published private var jobsService: IJobsServiceCD?
+    @Published private var jobsService: IJobsService?
     @Published var job: Jobs?
     private let userDeafaults = UserDefaults.standard
     
     init(job: Jobs?) {
-        self.jobsService = ServiceLocator.shared.getService(type: IJobsServiceCD.self)
+        self.jobsService = ServiceLocator.shared.getService(type: IJobsService.self)
         self.job = job
     }
     
